@@ -1,13 +1,14 @@
 class Bootcamp(
     var studentList : MutableList<Student>,
-    var teacherList : MutableList<Teacher>) {
+    var teacherList : MutableList<Teacher>,
+    var name: String) {
 
-
-    var name : String
 
     init {
-        println("Introduce el nombre del bootcamp:")
-        name = readLine().toString()
+        if (name.isEmpty()) {
+            println("Introduce el nombre del bootcamp:")
+            name = readLine().toString()
+        }
     }
 
     fun printParticipant() {
