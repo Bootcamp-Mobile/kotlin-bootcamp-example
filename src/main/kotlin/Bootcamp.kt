@@ -49,4 +49,15 @@ class Bootcamp(
         }
     }
 
+    fun printStudents(){
+        for(student in studentList) {
+            println(student.name)
+        }
+    }
+
+    fun printTeachers(){
+        for(teacher in teacherList) {
+            println(teacher.name)
+        }
+    }
 }
